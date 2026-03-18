@@ -13,48 +13,35 @@
       background-color: #f5f7fa;
     }
 
-    h2 {
-      color: #333;
-    }
-
-    button {
+    a.launch {
+      display: inline-block;
       padding: 15px 25px;
       font-size: 16px;
       background-color: #2b7cff;
       color: white;
-      border: none;
+      text-decoration: none;
       border-radius: 6px;
-      cursor: pointer;
     }
 
-    button:hover {
+    a.launch:hover {
       background-color: #1a5fd0;
-    }
-
-    p {
-      margin-top: 20px;
-      color: #666;
     }
   </style>
 </head>
 <body>
 
-  <h2>Open Your Application</h2>
+  <h2>Open Adobe Express Application</h2>
 
-  <button onclick="openClever()">
+  <a 
+    class="launch"
+    href="https://clever.com/oauth/instant-login?client_id=09729618c4873cbd26e6&district_id=60edb7ff2998ea3ad05dab2b"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     Launch App
-  </button>
+  </a>
 
-  <p>If nothing happens, please click the button above.</p>
-
-  <script>
-    function openClever() {
-      window.open(
-        "https://clever.com/oauth/instant-login?client_id=09729618c4873cbd26e6&district_id=60edb7ff2998ea3ad05dab2b",
-        "_blank"
-      );
-    }
-  </script>
+  <p>If the app does not open, please click the button above.</p>
 
 </body>
 </html>
