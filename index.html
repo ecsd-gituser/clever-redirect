@@ -1,17 +1,60 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Redirecting...</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Launch App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Optional fallback -->
-    <meta http-equiv="refresh" content="0; url=https://clever.com/oauth/instant-login?client_id=09729618c4873cbd26e6&district_id=60edb7ff2998ea3ad05dab2b">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f5f7fa;
+    }
 
-    <script>
-      window.location.replace("https://clever.com/oauth/instant-login?client_id=09729618c4873cbd26e6&district_id=60edb7ff2998ea3ad05dab2b");
-    </script>
-  </head>
-  <body>
-    <p>Redirecting to Clever...</p>
-  </body>
+    h2 {
+      color: #333;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 16px;
+      background-color: #2b7cff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1a5fd0;
+    }
+
+    p {
+      margin-top: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Open Your Application</h2>
+
+  <button onclick="openClever()">
+    Launch App
+  </button>
+
+  <p>If nothing happens, please click the button above.</p>
+
+  <script>
+    function openClever() {
+      window.open(
+        "https://clever.com/oauth/instant-login?client_id=09729618c4873cbd26e6&district_id=60edb7ff2998ea3ad05dab2b",
+        "_blank"
+      );
+    }
+  </script>
+
+</body>
 </html>
